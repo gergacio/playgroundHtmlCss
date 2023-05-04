@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- no produce visual things - talk to browser what we've got -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>georgi htmlCss playground</title>
+ 
+   
+</head>
+<body>
+    <!-- we have types of tags (p tag, anchor tag and instance of these tags we call them element!) -->
+ 
+    <!-- links - tag link you somewhere else -->
+    <div>
+        <a href="https://aka.ms/visual-studio-code">Visual Studio Code</a>
+    </div>
+    
+    <!-- headings and divs (container) and span (ziplock bag - container for small piece of text)-->
+    <div>
+        <h1>This is an h1!</h1>
+        <h2>This is an h2!</h2>
+        <h3>This is an h3!</h3>
+        <h4>This is an h4!</h4>
+        <h5>This is an h5!</h5>
+        <h6>This is an h6!</h6>
+    </div>
+    
+    <!-- text empasis -->
+    <div>
+        <strong>This text is strong.</strong>
+        <em>This text is emphasized.</em>
+    </div>
+    
+    <!-- paragraphs - put text into -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt modi est sapiente in optio quia inventore quis maxime ullam tenetur?</p>
+        <p>Maxime quibusdam, dolorum quaerat ducimus inventore sunt pariatur et ea dolore ipsam. Distinctio eum nobis officiis quam quasi exercitationem eaque?</p>
+        <p>Tempore quaerat odit sit rem nihil eligendi error quisquam, natus deleniti molestias voluptate nobis, amet repellendus. Aliquam deserunt quia impedit.</p>
+        <p>Doloremque expedita earum quidem pariatur amet. Officia ex corporis, repellendus ipsa, cumque quia at voluptas, iste harum dolor debitis labore?</p>
+        <p>Et quisquam sit nemo ipsam aliquid provident, ullam eligendi aspernatur placeat fuga nostrum molestiae ab nobis obcaecati nesciunt cupiditate neque.</p>
+    </div>
+    
+    <!-- images -->
+    <div>
+        <img src="" alt="i am image" />
+       
+    </div>
+    
+    <!-- inputs -->
+    <div>
+        <input /> <!-- with a trailing slash -->
+        <input> <!-- without a trailing slash; it's the same thing -->
+        <input type="color" />
+        <input type="file" />
+        <input type="number" />
+        <input type="datetime-local" />
+        <input type="radio" />
+        <input type="checkbox" />
+    </div>
+    <!-- somethimes we need additional data called atribute (so tag types is not enough) -->
+    <!-- 
+    <input value="This is a pre-filled value" />	
+    <input placeholder="This is a placeholder" />	
+    <input type="checkbox" checked />	
+    <input type="radio" checked />	
+    <input type="checkbox" disabled checked />	
+    <input type="color" value="#FF0000" /> -->
+
+    <!-- classes are special types of attributes, anything tag can have a class on it - classes are just label system -->
+    <!-- can have just 1 ID on the page -->
+    <!-- We like devs naming variables all the time, name things after what they do, but no how they looks like -->
+
+    
+    <!-- textarea -->
+    <div>
+        <textarea></textarea>
+    </div>
+    
+    <!-- select -->
+    <div>
+        <select>
+            <option value="sofia">Seattle</option>
+            <option value="plovdiv">Portland</option>
+            <option value="stara zagora">San Francisco</option>
+        </select>
+    </div>
+    
+    <!-- buttons we use them to attach js-->
+    <div>
+        <button>Click me! I don't do anything</button>
+    </div>
+    
+    <!-- table (if we have table data but no layout sites!)-->
+    <table>
+        <tr>
+        <td>(0,0)</td>
+        <td>(1,0)</td>
+        </tr>
+        <tr>
+        <td>(0,1)</td>
+        <td>(1,1)</td>
+        </tr>
+    </table>
+
+    <!-- ol, ul li -->
+    <ul>
+        <li>apple</li>
+    </ul>
+    <ul>
+        <li>banana</li>
+    </ul>
+    <!-- group of html tgas related to gathering user data (inputs, text aerea, selects)-->
+    <form>
+        <input />
+    </form>
+
+    <div class="example">content</div>
+
+    <div>
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <br />
+
+    <div class="floated">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <br />
+
+    <div class="flex-container reverse">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <br />
+
+    <div class="flex-container column">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <br />
+
+    <div class="flex-container jc-right">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <br />
+
+    <div class="flex-container ai-fe">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+        <!-- ex -->
+
+    <div class="red-square"></div>
+
+        <!-- ex -->
+
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+    </ul>
+
+    <div>
+        <button class="event-button">Click me!</button>
+    </div>
+   
+
+    <!-- ex -->
+
+    <div>
+        <input placeholder="type into me!" class="input-to-copy" />
+        <p class="p-to-copy-to">Nothing has happened yet.</p>
+    </div>
+
+        <!-- ex -->
+
+    <div>
+        <div class="color-box"></div>
+        <input class="color-input" placeholder="Type a color here!" />
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>

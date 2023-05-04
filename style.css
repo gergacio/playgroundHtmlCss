@@ -1,0 +1,160 @@
+/* css - series of rules (if condition is true apply style) */
+/* css is about size, color, positioning */
+/* font - called type set */
+
+/* h1 called selector; color called property; red - value  */
+
+
+/* set up box modelx */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: limegreen;
+    font-size: 60px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* shorthand css prop */
+    border: 3px solid pink; 
+}
+
+/* #ff0000, rgb() */
+/* measured in px and with relative sizes em, or rem */
+/* Parents affect children!! */
+
+h2 {
+    font-family: Monaco;
+    color: seagreen;
+    font-size: 40px;
+    border: 9px dotted gray;
+    text-align: center;
+}
+p {
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+div {
+    color: blue;
+ }
+  
+span {
+    color: yellow;
+    text-decoration: underline;
+    font-style: italic;
+}
+  
+ol {
+list-style: upper-roman;
+}
+  
+ul {
+list-style: square;
+}
+  
+li {
+color: brown;
+}
+
+/* CSS Selectors and the Cascade */
+
+/* Cascades - Always style on classes - no tags (only when we need all to be look the same(specificity)) */
+/* Avoid cascade as much as possible, keep simple css as much as possible */
+/* last win when thing consider equal */
+/* we have cascade effect try to resolve the properties */
+/* always more specific wins (two classes with no gap!) */
+/* classes more spesific than tags */
+/* No mix Tags and Classes! */
+/* we have Tag -1; Classes - 10; ID - 100 */
+
+/* Pseudoclasses - we change elem based on certain events*/
+/* :hover;  :first-child*/
+/* Pseudo Elements, Wildcard Selector - use (*) - means everithing (has specifity of 0)*/
+
+/* LAYOUT CSS */
+/* CSS BOX MODEL  width include content, margin, padding and Border!!  - so set up box-sizing: border-box*/
+/* display property - values (block, inline, inline-block, flex, grid) */
+/* heigth+width+padding+margin+bored = complete element */
+
+.example {
+    border: 3px solid red;
+    padding: 5px;
+    margin: 25px;
+    background-color: white;
+  }
+  /* padding -inside border; margin - ouside border */
+
+  /* Flexbox and Grid */
+
+.box-1 {
+    border: 1px solid black;
+    color: white;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 300px;
+}
+.box-2 {
+    border: 1px solid black;
+    color: white;
+    background-color: magenta;
+    height: 100px;
+    width: 300px;
+}
+.box-3 {
+    border: 1px solid black;
+    color: white;
+    background-color: limegreen;
+    height: 200px;
+    width: 100px;
+}
+
+/* Floated - element to push itself as far left or right as possible, and once it's out of space, go to the next line. - we control element itself, 
+Flex control element inside */
+
+.floated div {
+    float: left;
+}
+
+/* Flex */
+.flex-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
+.reverse {
+    flex-direction: row-reverse;
+    /* flex-direction: column-reverse; */
+}
+.column {
+    flex-direction: column;
+}
+.jc-right {
+    justify-content: flex-end;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+}
+.ai-fe {
+    align-items: flex-end;
+    /* align-items: center; */
+    /* align-items: stretch;
+    height: 200px; */
+}
+.red-square {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+.color-box {
+    background-color: limegreen;
+    width: 100px;
+    height: 100px;
+  }
+
+
+
+
+
